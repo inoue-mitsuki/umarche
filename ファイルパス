@@ -8,6 +8,14 @@ php artisan make:controller コントローラー名
 View
 /umarche/resources/views
 
+コンポーネント
+umarche/resources/views/components
+/umarche/resources/views/components/testsフォルダの場合
+<x-tests.コンポーネント名></x-tests.コンポーネント名>
+x-ファイル名.コンポーネント名
+
+
+
 モデル
 
 php artisan make:model モデル名
