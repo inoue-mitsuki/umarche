@@ -1,0 +1,13 @@
+Route
+/umarche/routes
+
+コントローラー
+/umarche/app/Http/Controllers
+php artisan make:controller コントローラー名
+
+View
+/umarche/resources/views
+
+モデル
+
+php artisan make:model モデル名
