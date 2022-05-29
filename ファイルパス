@@ -14,7 +14,10 @@ umarche/resources/views/components
 <x-tests.コンポーネント名></x-tests.コンポーネント名>
 x-ファイル名.コンポーネント名
 
-
+サービスプロバイダー
+/umarche/app/Providers
+php artisan mak:provider プロバイダー名
+サービスプロバイダーを使用する際は、/umarche/app/config/app.phpのprovidersに登録する必要がある。
 
 モデル
 
