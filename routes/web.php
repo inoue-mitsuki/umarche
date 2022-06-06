@@ -15,17 +15,17 @@ use App\Http\Controllers\LifeCycleTestCotroller;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.welcome');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('user.dashboard');
+})->middleware(['auth:users'])->name('dashboard');
 
 Route::get('component-test1', [ComponentTestController::class, 'showComponent1']);
 Route::get('component-test2', [ComponentTestController::class, 'showComponent2']);
 Route::get('servicecontainertest', [LifeCycleTestCotroller::class, 'showServiceContainerTest']);
-Route::get('serviceprovidertest', [LifeCycleTestCotroller::class, 'showServiceProviderTest']);
+Route::get('serviceprovidertest', [LifeCycleTestCotroller::class, 'showServiceTest']);
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

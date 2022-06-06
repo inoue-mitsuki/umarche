@@ -20,5 +20,6 @@ php artisan mak:provider プロバイダー名
 サービスプロバイダーを使用する際は、/umarche/app/config/app.phpのprovidersに登録する必要がある。
 
 モデル
-
+/umarche/app/Models
 php artisan make:model モデル名
+-mをつけると/umarche/app/database/migrationsも追加される
